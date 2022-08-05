@@ -1,0 +1,15 @@
+<div class="mycard">
+  <h5 routerLink="product/{{ product._id }}">{{ product.name }}</h5>
+  <img
+    routerLink="product/{{ product._id }}"
+    src="{{ product.image }}"
+    alt=""
+  />
+  <p routerLink="product/{{ product._id }}">{{ product.description }}</p>
+  <p>
+    <strong>$ {{ product.price }}</strong>
+  </p>
+  <button (click)="clickOnAdd(product)" class="btn btn-warning">
+    Add To Cart
+  </button>
+</div>

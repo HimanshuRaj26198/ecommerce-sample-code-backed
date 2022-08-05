@@ -1,0 +1,95 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">SK Enterprises</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Products</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact">Contact Us</a>
+        </li>
+        <li routerLink="cart">
+          <span style="display: flex"
+            ><i class="fas fa-shopping-cart">
+              <p
+                style="
+                  position: absolute;
+                  font-size: 18px;
+                  width: 25px;
+                  height: 25px;
+                  background-color: blue;
+                  color: white;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  border-radius: 50%;
+                  transform: translate(0px, -40px);
+                "
+              >
+                {{ cart }}
+              </p>
+            </i>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- 
+  
+  
+  <div class="navbar">
+  <div class="left-section">FLIPKART</div>
+  <div class="mid-section">
+    <input type="text" />
+  </div>
+  <div class="right-section">
+    <ul>
+      <li routerLink="/">Products</li>
+      <li *ngIf="!loggedIn" routerLink="signup">Signup</li>
+      <li *ngIf="!loggedIn" routerLink="signin">Signin</li>
+      <li *ngIf="loggedIn" (click)="signOut()">SignOut</li>
+      <li routerLink="cart">
+        <span style="display: flex"
+          ><i class="fas fa-shopping-cart">
+            <p
+              style="
+                position: absolute;
+                font-size: 18px;
+                width: 25px;
+                height: 25px;
+                background-color: blue;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                transform: translate(13px, -40px);
+              "
+            >
+              {{ cart }}
+            </p>
+          </i>
+        </span>
+      </li>
+    </ul>
+  </div>
+</div> 
+-->

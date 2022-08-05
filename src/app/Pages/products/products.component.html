@@ -1,0 +1,11 @@
+<div class="plist">
+  <app-product-card
+    *ngFor="let item of productList"
+    [product]="item"
+  ></app-product-card>
+</div>
+
+<div class="page_changer">
+  <span (click)="prevPage()"><i class="fas fa-arrow-circle-left"></i></span>
+  <span (click)="nextPage()"> <i class="fas fa-arrow-circle-right"></i> </span>
+</div>

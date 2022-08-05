@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+#nav {
+  position: sticky;
+  top: 0;
+  z-index: 3000;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #f29530;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+}

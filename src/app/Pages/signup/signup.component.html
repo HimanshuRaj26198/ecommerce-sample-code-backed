@@ -1,0 +1,22 @@
+<div class="signup_component">
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label> Enter your name </label>
+      <input class="formControl" formControlName="name" type="text" />
+    </div>
+    <div>
+      <label>Enter your Email</label>
+      <input class="formControl" formControlName="email" type="email" />
+    </div>
+    <div>
+      <label>Enter Your Phone Number</label>
+      <input class="formControl" formControlName="phoneNumber" type="tel" />
+    </div>
+    <div>
+      <label> Enter a new password </label>
+      <input class="formControl" formControlName="password" type="password" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

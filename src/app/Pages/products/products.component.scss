@@ -1,0 +1,38 @@
+.plist {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  margin-top: 8%;
+  transition: 0.3s ease-in-out;
+}
+
+.page_changer {
+  display: flex;
+  font-size: 30px;
+  background-color: #f29530;
+  justify-content: center;
+  position: sticky;
+  bottom: 0;
+
+  span {
+    margin: 3px 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .plist {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 614px) {
+  .plist {
+    grid-template-columns: auto;
+  }
+}
